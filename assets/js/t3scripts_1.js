@@ -322,7 +322,7 @@ function placeChart(){
       options: {
         title: {
           display: true,
-          text: 'Payment Rate or Years'
+          text: 'Payment Rate over Years'
         },
         scales: {
           yAxes: [{
