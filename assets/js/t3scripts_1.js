@@ -11,15 +11,15 @@ function validateForm() {
   var str = '';
 
   if (dob === ''){
-    str += "fill Date of Birth feild\n";
+    str += "fill *Date of Birth* feild\n";
     status = false;
   }
   if (income === ''){
-    str += "fill income feild\n";
+    str += "fill *Income* feild\n";
     status = false;
   }
   if (lifeE === ''){
-    str += "fill Life Expectancy feild";
+    str += "fill *Life Expectancy* feild";
     status = false;
   }
 
@@ -231,6 +231,7 @@ function placeChart(){
   var fromRetToLE = le - retAge;
   var ageLTC = Math.min(...agel);
   var labls = [];
+
   labls.push(+retAge);
   var num = Math.ceil(Math.round(retAge / 10) *10);
   for(var i=0; i < Math.floor(fromRetToLE/5); i++){
@@ -245,8 +246,20 @@ function placeChart(){
   var pdata = {};
   var fpdata = [];
   var psave = section1();
+  if(retAge < 65){
+      var count = 0;
+  }
+  else{
+    var count = retAge - 65;
+  }
   for(var i=0; i <= fromRetToLE; i++){
-    pdata[+retAge+i] = Math.round(100*psave+ +psave*i)/100;
+    if(+retAge+i < 65){
+      pdata[+retAge+i] = 0;
+    }
+    else{
+      pdata[+retAge+i] = Math.round(100*psave+ +psave*count)/100;
+      count++;
+    }
   }
   for(var i=0; i < labls.length; i++){
     fpdata.push(pdata[labls[i]]);
@@ -309,7 +322,7 @@ function placeChart(){
       options: {
         title: {
           display: true,
-          text: 'Amount to Save (by Thousands)'
+          text: 'Payment Rate or Years'
         },
         scales: {
           yAxes: [{
