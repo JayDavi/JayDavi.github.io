@@ -174,7 +174,7 @@ function section2(){
     subs += le - document.getElementById("ageNHP").value;
   }
   var num = Math.min(...agel);
-  if(total < 0){
+  if(total > 0){
     return calInflation2(total, num);
   }
   else{
@@ -197,7 +197,7 @@ function section3(){
   if(ree){
     total += 200;
   }
-  if(total < 0){
+  if(total > 0){
       return calInflation(total);
   }
   else{

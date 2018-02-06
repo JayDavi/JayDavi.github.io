@@ -52,6 +52,11 @@ body {
 
       padding-left: 10px;
     }
+    .well{
+      background-blend-mode: screen;
+    }
+
+
 }
 
 
