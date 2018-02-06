@@ -164,7 +164,12 @@ function section2(){
     subs += le - document.getElementById("ageNHP").value;
   }
   var num = Math.min(...agel);
-  return calInflation2(total, num);
+  if(total < 0){
+    return calInflation2(total, num);
+  }
+  else{
+    return 0;
+  }
 }
 
 
@@ -182,7 +187,12 @@ function section3(){
   if(ree){
     total += 200;
   }
-  return calInflation(total);
+  if(total < 0){
+      return calInflation(total);
+  }
+  else{
+      return 0;
+  }
 }
 
 function totalCost(){
