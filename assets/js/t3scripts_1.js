@@ -29,6 +29,17 @@ function validateForm() {
   return status;
 }
 
+var stat = false;
+function showHelp(id){
+  if(!stat){
+    document.getElementById('p'+id).style.display = 'block';
+    stat = true;
+  }
+  else{
+    document.getElementById("p"+id).style.display = 'none';
+    stat = false;
+  }
+}
 
 function showThis(id){
   var ide = document.getElementById(id).checked;
@@ -38,7 +49,6 @@ function showThis(id){
   }
   else{
     document.getElementById("p"+id).style.display = 'none';
-
   }
 }
 
@@ -217,12 +227,12 @@ function report(){
   section4();
   var income = document.getElementById("income").value;
   var cost = totalCost();
-  document.getElementById("theIncome").innerHTML = 'Total HeathCare Cost:  &nbsp;&nbsp; $' +
-  cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '<br>Preniums Above Medicare Cost: &nbsp;&nbsp; $' +
+  document.getElementById("theIncome").innerHTML = 'Total HeathCare Cost: &nbsp; $' +
+  cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '<br>Premiums Above Medicare Cost: &nbsp;&nbsp; $' +
   section1().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '<br>Long Term Care:  &nbsp;&nbsp; $' +
   section2().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '<br>Not Covered Under Medicare:  &nbsp;&nbsp; $' +
   section3().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
-  '<br><br>' + 'To Live Comfortably Save... <br>$' +
+  '<br><br>' + 'To live comfortably save... <br>$' +
   byYear.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' a year<br>$' +
   byMonth.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' a month<br>$' +
   byWeek.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' a week<br>$' +
@@ -374,7 +384,3 @@ var $form = $( "#flex" );
                     return ( input === 0 ) ? "" : input.toLocaleString( "en-US" );
                 } );
     });
-
-  $('.popover-dismiss').popover({
-    trigger: 'focus'
-  })

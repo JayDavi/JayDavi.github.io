@@ -27,7 +27,7 @@ body {
     background-blend-mode: screen;
 
 
-    padding-top: 20px;
+    padding-top: 20px ;
 
     padding-right: 80px;
 
@@ -41,6 +41,17 @@ body {
 
 
 
+}
+@media screen and (max-width: 1024px) {
+    body {
+      padding-top: s0px ;
+
+      padding-right: 10px;
+
+      padding-bottom: 10px;
+
+      padding-left: 10px;
+    }
 }
 
 
@@ -56,6 +67,9 @@ body {
   padding-top: 15px;
 
 } */
+.navbar{
+  padding: 5px;
+}
 
 .insideL {
 
@@ -110,7 +124,7 @@ body {
 } */
 
 #home{
-
+padding-bottom: 40px;
   background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
 
   background-size: cover;
