@@ -16,6 +16,15 @@
 
 body {
 
+    background-image: url('https://static.pexels.com/photos/346529/pexels-photo-346529.jpeg')!important;
+
+    background-size: cover;
+
+
+
+    background-color: transparent !important;
+
+    background-blend-mode: screen;
 
 
     padding-top: 20px;
@@ -25,24 +34,6 @@ body {
     padding-bottom: 20px;
 
     padding-left: 80px;
-
-
-
-
-
-    background: -moz-radial-gradient(center, ellipse cover, rgba(28,144,176,1) 0%, rgba(180,216,232,1) 72%, rgba(240,245,255,1) 100%); /* ff3.6+ */
-
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,144,176,1)), color-stop(72%, rgba(180,216,232,1)), color-stop(100%, rgba(240,245,255,1))); /* safari4+,chrome */
-
-    background:-webkit-radial-gradient(center, ellipse cover, rgba(28,144,176,1) 0%, rgba(180,216,232,1) 72%, rgba(240,245,255,1) 100%); /* safari5.1+,chrome10+ */
-
-    background: -o-radial-gradient(center, ellipse cover, rgba(28,144,176,1) 0%, rgba(180,216,232,1) 72%, rgba(240,245,255,1) 100%); /* opera 11.10+ */
-
-    background: -ms-radial-gradient(center, ellipse cover, rgba(28,144,176,1) 0%, rgba(180,216,232,1) 72%, rgba(240,245,255,1) 100%); /* ie10+ */
-
-    background:radial-gradient(ellipse at center, rgba(28,144,176,1) 0%, rgba(180,216,232,1) 72%, rgba(240,245,255,1) 100%); /* w3c */
-
-
 
 
 
@@ -120,13 +111,14 @@ body {
 
 #home{
 
-  background-image: url('https://static.pexels.com/photos/346529/pexels-photo-346529.jpeg')!important;
+  background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
 
   background-size: cover;
 
 
 
-  background-color: rgb(220,220,220) !important;
+  background-color: rgb(184,184,184);
+
 
   background-blend-mode: screen;
 
@@ -136,13 +128,13 @@ body {
 
 #LTC{
 
-  background-image: url('https://static.pexels.com/photos/346529/pexels-photo-346529.jpeg')!important;
+  background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
 
   background-size: cover;
 
 
 
-  background-color: rgb(220,220,220) !important;
+  background-color: rgb(184,184,184);
 
   background-blend-mode: screen;
 
@@ -152,13 +144,13 @@ body {
 
 #NotCov{
 
-  background-image: url('https://static.pexels.com/photos/346529/pexels-photo-346529.jpeg')!important;
+  background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
 
   background-size: cover;
 
 
 
-  background-color: rgb(220,220,220) !important;
+  background-color: rgb(184,184,184);
 
   background-blend-mode: screen;
 
@@ -168,13 +160,13 @@ body {
 
 #res{
 
-  background-image: url('https://static.pexels.com/photos/346529/pexels-photo-346529.jpeg')!important;
+  background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
 
   background-size: cover;
 
 
 
-  background-color: rgb(220,220,220) !important;
+  background-color: rgb(184,184,184);
 
   background-blend-mode: screen;
 

@@ -11,15 +11,15 @@ function validateForm() {
   var str = '';
 
   if (dob === ''){
-    str += "fill *Date of Birth* feild\n";
+    str += "PLEASE FILL IN YOUR DATE OF BIRTH.\n";
     status = false;
   }
   if (income === ''){
-    str += "fill *Income* feild\n";
+    str += "PLEASE FILL IN YOUR INCOME.\n";
     status = false;
   }
   if (lifeE === ''){
-    str += "fill *Life Expectancy* feild";
+    str += "PLEASE FILL IN THE LIFE EXPENTANCY FIELD.";
     status = false;
   }
 
@@ -301,7 +301,7 @@ function placeChart(){
       data: {
           labels: labls,
           datasets: [{
-              label: "Preniums Above Medicare",
+              label: "Premiums Above Medicare",
               fill: false,
               borderColor: "red",
               data: fpdata,
@@ -363,4 +363,8 @@ var $form = $( "#flex" );
                 $this.val( function() {
                     return ( input === 0 ) ? "" : input.toLocaleString( "en-US" );
                 } );
-    } );
+    });
+
+  $('.popover-dismiss').popover({
+    trigger: 'focus'
+  })

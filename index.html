@@ -98,6 +98,8 @@
         <div class="col-sm-2">
           <input class="form-control" type="number" id="LE"><br>
         </div>
+        <!-- <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a> -->
+        <!-- <a id="helphelp" tabindex="0" data-toggle="popover" role="button" data-trigger="focus" title="Help" data-content="This is the age that you hope to live to."><u>Help?</u></a> -->
       </div>
 
       <div class="form-group">
@@ -132,7 +134,9 @@
       </div>
       <br><br>
 <!--  -->
+<br>
     </div>
+
     <div class="row" style="display:none" id="ques">
       <div class="col-sm-4">
         Would you like to save for other services not covered by Medicare?
@@ -152,32 +156,38 @@
         </div>
       </div>
     </div>
+
+    <br>
+    <div class="col-sm-7">
+      <small><em>Premiums above medicare is $131,000.</em></small>
+    </div>
+
   </div>
 
   <div class="well" style="display: none" id="LTC">
     <input type="checkbox" id="AD" onchange="showThis('AD')"> Adult Daycare &nbsp;&nbsp;
     <br><br>
-    <p style="font-size:90%; display: none" id="pAD">At What Age: <input type="number" id="ageAD"><br><br></p>
+    <p style="font-size:90%; display: none" id="pAD"><br>At What Age: <input type="number" id="ageAD"><br><br></p>
 
     <input type="checkbox" id="AL" onchange="showThis('AL')"> Assisted Living &nbsp;&nbsp;
     <br><br>
-    <p style="display: none; font-size:90%" id="pAL">At What Age: <input type="number" id="ageAL"><br><br></p>
+    <p style="display: none; font-size:90%" id="pAL"><br>At What Age: <input type="number" id="ageAL"><br><br></p>
 
     <input type="checkbox" id="HS" onchange="showThis('HS')"> Homemaker Services &nbsp;&nbsp;
     <br><br>
-    <p style="display: none; font-size:90%" id="pHS">At What Age: <input type="number" id="ageHS"><br><br></p>
+    <p style="display: none; font-size:90%" id="pHS"><br>At What Age: <input type="number" id="ageHS"><br><br></p>
 
     <input type="checkbox" id="IHA" oninput="showThis('IHA')" onchange="showThis('IHA')"> Inhome Health aid &nbsp;&nbsp;
     <br><br>
-    <p style="display: none; font-size:90%" id="pIHA">At What Age: <input type="number" id="ageIHA"><br><br></p>
+    <p style="display: none; font-size:90%" id="pIHA"><br>At What Age: <input type="number" id="ageIHA"><br><br></p>
 
     <input type="checkbox" id="NHS" onchange="showThis('NHS')"> Nursing home (Semi private room) &nbsp;&nbsp;
     <br><br>
-    <p style="display: none; font-size:90%" id="pNHS">At What Age: <input type="number" id="ageNHS"><br><br></p>
+    <p style="display: none; font-size:90%" id="pNHS"><br>At What Age: <input type="number" id="ageNHS"><br><br></p>
 
     <input type="checkbox" id="NHP" onchange="showThis('NHP')"> Nursing Home (private room) &nbsp;&nbsp;
     <br>
-    <p style="display: none; font-size:90%" id="pNHP">At What Age: <input type="number" id="ageNHP"><br><br></p>
+    <p style="display: none; font-size:90%" id="pNHP"><br>At What Age: <input type="number" id="ageNHP"><br><br></p>
     <br>
 
     <div class="col-sm-4">
@@ -249,13 +259,14 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
   </script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
