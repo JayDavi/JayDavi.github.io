@@ -53,6 +53,15 @@ body {
       padding-left: 10px;
     }
     .well{
+      background-image: url('https://fthmb.tqn.com/uaVGoOdpU4L4P2toeltrAaTfde0=/1504x989/filters:no_upscale()/parkplay-56afae9c5f9b58b7d01bccb4.jpg')!important;
+
+      background-size: cover;
+
+
+
+      background-color: rgb(184,184,184);
+
+
       background-blend-mode: screen;
     }
 
